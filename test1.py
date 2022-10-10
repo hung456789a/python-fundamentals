@@ -133,10 +133,18 @@ for i in range(1, a+1):
     tong+=i
 print('tong =',tong)'''
 
-tong = 0
+'''tong = 0
 a = int(input('nhap so a:'))
 for i in range(1, a+1):
     tong+=1/i
-print('tong =',tong)
+print('tong =',tong)'''
 
-
+###
+n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong+cot <= n+1:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
