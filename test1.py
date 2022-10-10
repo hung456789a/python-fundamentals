@@ -231,14 +231,13 @@ for i in S:
         slkyso+=1
 print(f'trong chuoi {S} co {slkytu} ky tu va {slkyso} ky so')'''
 ###19
-S = input('nhap chuoi:')
+'''S = input('nhap chuoi:')
 A = 'aeiou'
 nguyenam = 0
 phuam = 0
-for i in A:
-    for I in S:
-        if i==I:
-            nguyenam+=1
-        else:
-            phuam+=1
-print(f'chuoi {S} co {nguyenam} nguyen am va co {phuam} phu am')
+for i in S:
+    if i in A:
+        nguyenam+=1
+    else:
+        phuam+=1
+print(f'chuoi {S} co {nguyenam} nguyen am va co {phuam} phu am')'''
