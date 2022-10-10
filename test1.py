@@ -152,3 +152,93 @@ for dong in range(1,n+1):
             print(' ',end=' ')
     print()'''
 ###11
+'''n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong+cot >= n+1:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+###12
+'''n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong >= cot:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+
+###13
+'''n = int(input("nhập cạnh n: "))
+for cot in range(1,n+1):
+    for dong in range(1,n+1):
+        if dong <= cot:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+###14
+'''n = int(input("nhập cạnh n: "))
+for cot in range(1,n+1):
+    for dong in range(1,n+1):
+        if dong == 1 or cot == 1 or dong + cot == n+1:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+
+###15
+'''n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong == n or cot == n or dong + cot == n+1:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+###16
+'''n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong == n or cot == 1 or dong == cot:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+##17
+'''n = int(input("nhập cạnh n: "))
+for dong in range(1,n+1):
+    for cot in range(1,n+1):
+        if dong == 1 or cot == n or dong == cot:
+            print('X',end=' ')
+        else:
+            print(' ',end=' ')
+    print()'''
+###18
+'''S = input('nhap chuoi:')
+kytu = input('nhap ky tu:')
+print('cau b')
+dem=S.count(kytu)
+print(f'trong chuoi {S} co {dem} ky tu {kytu} ')
+print('cau c')
+slkytu = slkyso = 0
+for i in S:
+    if i.isalpha()==True:
+        slkytu+=1
+    elif i.isnumeric()==True:
+        slkyso+=1
+print(f'trong chuoi {S} co {slkytu} ky tu va {slkyso} ky so')'''
+###19
+S = input('nhap chuoi:')
+A = 'aeiou'
+nguyenam = 0
+phuam = 0
+for i in A:
+    for I in S:
+        if i==I:
+            nguyenam+=1
+        else:
+            phuam+=1
+print(f'chuoi {S} co {nguyenam} nguyen am va co {phuam} phu am')
